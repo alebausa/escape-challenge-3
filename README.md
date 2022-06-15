@@ -19,6 +19,7 @@ Every <code>Enigma</code> will have:
 Create all the views and routes needed in order to:
 - Create Enigmas. All the teams from the database should be placed in a <code>select</code>. You should be able to choose *only one* team per enigma.
 - List all the enigmas. A list of titles as anchors. In the view, the enigmas should be **visually separated by *solved* and *not solved***. Eventhough you solved them all, leave some *unsolved* to test this feature.
+- Also, remember how we had a route /enigma that was protected to only logged-in users? EVERYTHING related to enigmas should be protected not seen by users unless they are logged in.
 - See the enigma's detail with the name of the team that tried to solve it.
 - Edit enigmas.
 - Delete enigmas.
