@@ -13,13 +13,13 @@ Every <code>Enigma</code> will have:
 - Number (number)
 - Description (string). What does the person have to do to solve it?
 - Image (string). It will store an image URL from the Internet (pick any random images that you want). This field is optional.
-- Team (id referencing the model <code>Team</code>)
+- Team (id referencing the model <code>Team</code>). This will be a reference to the team that tried to solve the enigma.
 - Solved (boolean). You will have to read about [input type checkbox](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) to solve this one. This kind of input has a property *checked*: when this happens, we should store the boolean *true* in the document and that enigma will be considered *solved*.
 
 Create all the views and routes needed in order to:
 - Create Enigmas. All the teams from the database should be placed in a <code>select</code>. You should be able to choose *only one* team per enigma.
-- List all the enigmas. A list of titles as anchors.
-- See the enigma's detail with the name of the team that solved it.
+- List all the enigmas. A list of titles as anchors. In the view, the enigmas should be **visually separated by *solved* and *not solved***. Eventhough you solved them all, leave some *unsolved* to test this feature.
+- See the enigma's detail with the name of the team that tried to solve it.
 - Edit enigmas.
 - Delete enigmas.
 
