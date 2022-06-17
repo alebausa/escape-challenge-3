@@ -8,7 +8,7 @@ Copy this code on the <code>README.md</code> of the repository you are working o
 
 Our app already has users and teams. The last part is actually the part we have been working on all day: creating the enigmas.
 
-Every <code>Enigma</code> will have:
+Create a new model called Enigma. Every <code>Enigma</code> will have the following fields:
 - Title (string)
 - Number (number)
 - Description (string). What does the person have to do to solve it?
@@ -18,7 +18,7 @@ Every <code>Enigma</code> will have:
 
 Create all the views and routes needed in order to:
 - Create Enigmas. All the teams from the database should be placed in a <code>select</code>. You should be able to choose *only one* team per enigma.
-- List all the enigmas. A list of titles as anchors. In the view, the enigmas should be **visually separated by *solved* and *not solved***. Eventhough you solved them all, leave some *unsolved* to test this feature.
+- List all the enigmas. A list of titles as anchors. In the view, the enigmas should be **visually separated by *solved* and *not solved***. Even though you solved them all, leave some *unsolved* enigmas in the database to test this feature.
 - Also, remember how we had a route /enigma that was protected to only logged-in users? EVERYTHING related to enigmas should be protected not seen by users unless they are logged in.
 - See the enigma's detail with the name of the team that tried to solve it.
 - Edit enigmas.
